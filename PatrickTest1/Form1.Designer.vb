@@ -22,10 +22,42 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.lblTestLabel = New System.Windows.Forms.Label()
+        Me.btnButton1 = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'lblTestLabel
+        '
+        Me.lblTestLabel.AutoSize = True
+        Me.lblTestLabel.Location = New System.Drawing.Point(318, 50)
+        Me.lblTestLabel.Name = "lblTestLabel"
+        Me.lblTestLabel.Size = New System.Drawing.Size(54, 13)
+        Me.lblTestLabel.TabIndex = 0
+        Me.lblTestLabel.Text = "TestLabel"
+        '
+        'btnButton1
+        '
+        Me.btnButton1.Location = New System.Drawing.Point(318, 103)
+        Me.btnButton1.Name = "btnButton1"
+        Me.btnButton1.Size = New System.Drawing.Size(120, 45)
+        Me.btnButton1.TabIndex = 1
+        Me.btnButton1.Text = "Button1"
+        Me.btnButton1.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnButton1)
+        Me.Controls.Add(Me.lblTestLabel)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
+    Friend WithEvents lblTestLabel As Label
+    Friend WithEvents btnButton1 As Button
 End Class
