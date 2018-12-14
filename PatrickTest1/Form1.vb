@@ -4,6 +4,6 @@
     End Sub
 
     Private Sub btnAnotherButton_Click(sender As Object, e As EventArgs) Handles btnAnotherButton.Click
-        MsgBox("This is another button")
+        MsgBox("This is another button,this is for button 2, it looks really much better!!!")
     End Sub
 End Class
