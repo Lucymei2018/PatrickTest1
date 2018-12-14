@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.lblTestLabel = New System.Windows.Forms.Label()
         Me.btnButton1 = New System.Windows.Forms.Button()
+        Me.btnAnotherButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTestLabel
@@ -44,11 +45,21 @@ Partial Class Form1
         Me.btnButton1.Text = "New Button1"
         Me.btnButton1.UseVisualStyleBackColor = True
         '
+        'btnAnotherButton
+        '
+        Me.btnAnotherButton.Location = New System.Drawing.Point(322, 203)
+        Me.btnAnotherButton.Name = "btnAnotherButton"
+        Me.btnAnotherButton.Size = New System.Drawing.Size(189, 62)
+        Me.btnAnotherButton.TabIndex = 2
+        Me.btnAnotherButton.Text = "Another button"
+        Me.btnAnotherButton.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnAnotherButton)
         Me.Controls.Add(Me.btnButton1)
         Me.Controls.Add(Me.lblTestLabel)
         Me.Name = "Form1"
@@ -60,4 +71,5 @@ Partial Class Form1
 
     Friend WithEvents lblTestLabel As Label
     Friend WithEvents btnButton1 As Button
+    Friend WithEvents btnAnotherButton As Button
 End Class
